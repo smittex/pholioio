@@ -1,10 +1,10 @@
 <?php
 header('Content-type: image/png');
 
-$font = './Lucida Sans Demibold Roman.ttf';
+$font = './includes/fonts/Lucida Sans Demibold Roman.ttf';
 $font_size = 10;
 
-$fp_port0 = '/var/www/test/tcm-portfolio.png';
+$fp_port0 = '/var/www/pholioio/tcm-portfolio.png';
 
 $template = imagecreatefrompng($fp_port0);
 

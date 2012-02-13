@@ -6,7 +6,7 @@ ERROR_REPORTING(E_ALL);
 $DEBUG = false;
 $STATS = false;
 
-$font = './Verdana.ttf';
+$font = './includes/fonts/Verdana.ttf';
 $font_size = 12;
 
 $max_main_width = 423;  // Max rendered length, in pixels, per line
@@ -16,6 +16,12 @@ $materials = $_POST['materials'];
 //$project_name = $_POST['project_name'];
 //$completion = $_POST['completion'];
 //$process = $_POST['process'];
+
+// Defaults
+if (!isset($materials)){
+	$materials = 'woods: cherry, cherry burl, walnut, spanish cedar, and wenge; off-the-rack and custom brass hardware; french-fit foam
+lined with synthetic black velvet';
+}
 
 $materials_words = explode(" ", $materials);  // Split input into array or words
 $rev_words = array_reverse($materials_words);  // Reverse the array of words to use as a stack
@@ -91,7 +97,7 @@ function getLength($candidate){
   return ($bbox[2] - $bbox[0]);
 }
 
-function breakdown($string, $max_length, $font_path, $font_size) as array(){
+function breakdown($string, $max_length, $font_path, $font_size) {
   $_words = explode(" ", $string);            // Split input into array of words
   $rev_words = array_reverse($_words);        // Reverse the array of words to use as a stack
 
