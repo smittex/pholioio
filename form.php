@@ -1,11 +1,9 @@
-<?php
-
-echo '123';
+<?php 
 
 ?>
 <html>
 <body>
-<form action="sample.php" method="post">
+<form action="form.php" method="post">
 <table>
 	<tr>
 		<td>Maker Name:</td>
@@ -32,6 +30,10 @@ echo '123';
 	</tr>
 </table>
 </form>
-
+<?
+echo '<pre>';
+print_r($_POST);
+echo '</pre>';
+?>
 </body>
 </html>
