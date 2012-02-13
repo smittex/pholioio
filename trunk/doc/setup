@@ -1,0 +1,6 @@
+2012/02/12
+I'm using Eclipse 3.7 on Ubuntu 11.10 with apache2, mysql, and php5 installed.  
+Eclipse has PDT and Subversive installed and configured to use xdebug.  See 
+http://www.xdebug.org/docs/install and http://robsnotebook.com/php_debugger_pdt_xdebug
+for installation & configuration.  Testing using Firefox 10 with Firebug installed.  
+Install php5-gd and restart apache2.
