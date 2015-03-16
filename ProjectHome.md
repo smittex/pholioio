@@ -1,0 +1,1 @@
+Pholioio is an open sourced image generator that alleviates the headache from producing pre-press images by using templates.
